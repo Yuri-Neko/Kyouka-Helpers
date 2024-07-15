@@ -1,3 +1,7 @@
+Sure, here's the cleaned-up version of the document:
+
+---
+
 ![Logo](https://telegra.ph/file/0201b9bbd766212d4979b.jpg)
 
 # Kyouka API
@@ -6,15 +10,17 @@ Simple Usage Rest API Kyouka
 
 ## Documentation
 
-[GetGey](https://) [COMING SOON]
+[Get Your Keys Access](https://) [COMING SOON]
 
 ## Installation
 
 ```bash
-  npm install kyouka-helpers
+npm install kyouka-helpers
 ```
-    
-## Examples Parameter & Nothing Parameter
+
+## Examples
+
+### Parameterized Request
 
 ```javascript
 const KyoukaAPI = require('kyouka-helpers');
@@ -35,7 +41,7 @@ const KyoukaAPI = require('kyouka-helpers');
 
 const api = new KyoukaAPI('YOUR-APIKEY');
 
-api.get('gemini', { query: 'Questions', url: 'URL-Image'})
+api.get('gemini', { query: 'Questions', url: 'URL-Image' })
   .then(response => {
     console.log(response);
   })
@@ -43,6 +49,8 @@ api.get('gemini', { query: 'Questions', url: 'URL-Image'})
     console.error(error);
   });
 ```
+
+### Non-parameterized Request
 
 ```javascript
 const KyoukaAPI = require('kyouka-helpers');
@@ -58,21 +66,21 @@ api.get('nekopoi/latest')
   });
 ```
 
+### POST Request
+
 ```javascript
 const KyoukaAPI = require('kyouka-helpers');
 
 const api = new KyoukaAPI('YOUR-APIKEY');
 
-api.post('igodesu/search', { url: 'You url igodesu search' })
+api.post('igodesu/search', { url: 'Your URL for igodesu search' })
   .then(response => {
     console.log(response);
   })
   .catch(error => {
     console.error(error);
   });
-
 ```
-
 
 ## License
 
@@ -86,4 +94,4 @@ api.post('igodesu/search', { url: 'You url igodesu search' })
 
 - [@KyoukaHashiba](https://www.github.com/Yuri-Neko)
 
-Dengan perubahan ini, Anda bisa menggunakan `KyoukaAPI` sesuai dengan dokumentasi di atas. Jika ada pertanyaan lebih lanjut, jangan ragu untuk bertanya!
+---
