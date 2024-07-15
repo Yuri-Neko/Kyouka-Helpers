@@ -58,6 +58,22 @@ api.get('nekopoi/latest')
   });
 ```
 
+```javascript
+const KyoukaAPI = require('kyouka-helpers');
+
+const api = new KyoukaAPI('YOUR-APIKEY');
+
+api.post('igodesu/search', { url: 'You url igodesu search' })
+  .then(response => {
+    console.log(response);
+  })
+  .catch(error => {
+    console.error(error);
+  });
+
+```
+
+
 ## License
 
 [MIT](https://choosealicense.com/licenses/mit/)
