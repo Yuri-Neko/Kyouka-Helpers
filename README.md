@@ -6,7 +6,7 @@ Simple Usage Rest API Kyouka
 
 ## Documentation
 
-[Documentation](https://api.maelyn.my.id)
+[GetGey](https://) [COMING SOON]
 
 ## Installation
 
@@ -14,7 +14,7 @@ Simple Usage Rest API Kyouka
   npm install kyouka-helpers
 ```
     
-## Usage/Examples
+## Examples Parameter & Nothing Parameter
 
 ```javascript
 const KyoukaAPI = require('kyouka-helpers');
